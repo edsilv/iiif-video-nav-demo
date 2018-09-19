@@ -1,0 +1,27 @@
+{
+  "name": "iiif-video-nav-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cp -R node_modules/iiif-tree-component/dist iiif-tree-component",
+    "start": "http-server ./ -p 1234"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edsilv/iiif-video-nav-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edsilv/iiif-video-nav-demo/issues"
+  },
+  "homepage": "https://github.com/edsilv/iiif-video-nav-demo#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "iiif-tree-component": "iiif-commons/iiif-tree-component#v1.1.6"
+  }
+}

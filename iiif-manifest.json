@@ -1,0 +1,72 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/anno.jsonld",
+        "http://iiif.io/api/presentation/3/context.json"
+    ],
+    "id": "https://iiif-video-nav-demo.netlify.com/manifest.json",
+    "type": "Manifest",
+    "label": {
+        "en": [
+            "Story Session 1 - Dad & Mom - Learning to Ski & A Night in Kentucky"
+        ]
+    },
+    "items": [
+        {
+            "id": "https://iiif-video-nav-demo.netlify.com/canvas/0",
+            "type": "Canvas",
+            "label": {
+                "en": [
+                    "Story Session 1"
+                ]
+            },
+            "duration": 29.54,
+            "items": [
+                {
+                    "id": "https://iiif-video-nav-demo.netlify.com/annotationpage/0",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif-video-nav-demo.netlify.com/annotation/0",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif-video-nav-demo.netlify.com/canvas/0",
+                            "body": {
+                                "id": "http://files.blokdust.io/video/story-session1.mp4",
+                                "format": "video/mp4",
+                                "type": "Video"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "structures": [
+        {
+            "id": "https://iiif-video-nav-demo.netlify.com/range/0",
+            "type": "Range",
+            "label": {
+                "en": [
+                    "Story Session 1"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif-video-nav-demo.netlify.com/range/1",
+                    "type": "Range",
+                    "label": {
+                        "en": [
+                            "Mum's Story"
+                        ]
+                    },
+                    "items": [
+                        {
+                            "id": "https://iiif-video-nav-demo.netlify.com/canvas/0#t=790,1157",
+                            "type": "Canvas"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

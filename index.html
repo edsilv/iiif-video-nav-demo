@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IIIF Video Nav Demo</title>
+    <style href="iiif-tree-component/iiif-tree-component.css"></style>
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/manifesto.js/dist/client/manifesto.bundle.js"></script>
+    <script src="iiif-tree-component/iiif-tree-component.bundle.js"></script>
+
+    <style>
+        #app {
+            display: flex;
+        }
+
+        .tree {
+            padding: 2em;
+        }
+
+        .video {
+            flex-grow: 1;
+            padding: 2em;
+        }
+
+        video {
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">  
+        <div class="tree">
+            <div id="tree" class="iiif-tree-component">
+                loading...
+            </div>
+        </div>
+        <div class="video">
+            <video src="video.mp4" controls></video>
+        </div>
+    </div> 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function (event) {
+
+            var manifestUrl = 'iiif-manifest.json';
+
+            Manifold.loadManifest({
+                iiifResourceUri: manifestUrl
+            }).then(function(helper){    
+                
+                var treecomponent = new IIIFComponents.TreeComponent({
+                    target: document.querySelector('#tree')
+                });
+
+                treecomponent.set({
+                    helper: helper
+                });
+
+                treecomponent.on('treeNodeSelected', function(node) {
+                    console.log('selected: ' + node.label);
+                    console.log(node.data.id)
+                });
+
+            }).catch(function() {
+                console.error('failed to load manifest');
+            });
+
+        });
+    </script>
+</body>
+</html>
