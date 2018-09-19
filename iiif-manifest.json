@@ -56,13 +56,51 @@
                     "type": "Range",
                     "label": {
                         "en": [
-                            "Dad's Story"
+                            "The First-time Skier"
                         ]
                     },
                     "items": [
                         {
                             "id": "https://iiif-video-nav-demo.netlify.com/canvas/0#t=151,768",
                             "type": "Canvas"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "label": {
+                                "en": [
+                                    "Title"
+                                ]
+                            },
+                            "value": {
+                                "en": [
+                                    "The First-time Skier"
+                                ]
+                            }
+                        },
+                        {
+                            "label": {
+                                "en": [
+                                    "Speaker"
+                                ]
+                            },
+                            "value": {
+                                "en": [
+                                    "Dad"
+                                ]
+                            }
+                        },
+                        {
+                            "label": {
+                                "en": [
+                                    "Synopsis"
+                                ]
+                            },
+                            "value": {
+                                "en": [
+                                    "Dad becomes the talk of the mountain after an \"adventurous\" first day of skiing"
+                                ]
+                            }
                         }
                     ]
                 },
@@ -71,13 +109,104 @@
                     "type": "Range",
                     "label": {
                         "en": [
-                            "Mum's Story"
+                            "A Night in Kentucky"
                         ]
                     },
                     "items": [
                         {
                             "id": "https://iiif-video-nav-demo.netlify.com/canvas/0#t=790,1157",
                             "type": "Canvas"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "label": {
+                                "en": [
+                                    "Title"
+                                ]
+                            },
+                            "value": {
+                                "en": [
+                                    "A Night in Kentucky"
+                                ]
+                            }
+                        },
+                        {
+                            "label": {
+                                "en": [
+                                    "Speaker"
+                                ]
+                            },
+                            "value": {
+                                "en": [
+                                    "Mom"
+                                ]
+                            }
+                        },
+                        {
+                            "label": {
+                                "en": [
+                                    "Synopsis"
+                                ]
+                            },
+                            "value": {
+                                "en": [
+                                    "Mom becomes the talk of a small Kentucky town after staying the night in a local \"hotel\""
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "https://iiif-video-nav-demo.netlify.com/range/3",
+                    "type": "Range",
+                    "label": {
+                        "en": [
+                            "A Good Jewish Boy"
+                        ]
+                    },
+                    "items": [
+                        {
+                            "id": "https://iiif-video-nav-demo.netlify.com/canvas/0#t=1233,1483",
+                            "type": "Canvas"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "label": {
+                                "en": [
+                                    "Title"
+                                ]
+                            },
+                            "value": {
+                                "en": [
+                                    "A Good Jewish Boy"
+                                ]
+                            }
+                        },
+                        {
+                            "label": {
+                                "en": [
+                                    "Speaker"
+                                ]
+                            },
+                            "value": {
+                                "en": [
+                                    "Zack"
+                                ]
+                            }
+                        },
+                        {
+                            "label": {
+                                "en": [
+                                    "Synopsis"
+                                ]
+                            },
+                            "value": {
+                                "en": [
+                                    "Zack becomes the talk of Hillel after putting on a surprise \"show\" for the Shabbat service"
+                                ]
+                            }
                         }
                     ]
                 }
