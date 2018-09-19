@@ -56,6 +56,21 @@
                     "type": "Range",
                     "label": {
                         "en": [
+                            "Dad's Story"
+                        ]
+                    },
+                    "items": [
+                        {
+                            "id": "https://iiif-video-nav-demo.netlify.com/canvas/0#t=151,768",
+                            "type": "Canvas"
+                        }
+                    ]
+                },
+                {
+                    "id": "https://iiif-video-nav-demo.netlify.com/range/1",
+                    "type": "Range",
+                    "label": {
+                        "en": [
                             "Mum's Story"
                         ]
                     },
