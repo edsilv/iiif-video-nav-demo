@@ -8,6 +8,9 @@
     <style href="iiif-tree-component/iiif-tree-component.css"></style>
     <script src="https://unpkg.com/jquery"></script>
     <script src="https://unpkg.com/manifesto.js/dist/client/manifesto.bundle.js"></script>
+    <script src="https://unpkg.com/@iiif/manifold/dist/manifold.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsviews/0.9.76/jsviews.min.js"></script>
     <script src="iiif-tree-component/iiif-tree-component.bundle.js"></script>
 
     <style>
@@ -17,6 +20,7 @@
 
         .tree {
             padding: 2em;
+            width: 200px;
         }
 
         .video {
@@ -37,7 +41,7 @@
             </div>
         </div>
         <div class="video">
-            <video src="video.mp4" controls></video>
+            <video src="http://files.blokdust.io/video/story-session1.mp4" controls></video>
         </div>
     </div> 
 
@@ -60,11 +64,11 @@
 
                 treecomponent.on('treeNodeSelected', function(node) {
                     console.log('selected: ' + node.label);
-                    console.log(node.data.id)
+                    console.log(node.data.canvases[0])
                 });
 
-            }).catch(function() {
-                console.error('failed to load manifest');
+            }).catch(function(e) {
+                console.error(e);
             });
 
         });
