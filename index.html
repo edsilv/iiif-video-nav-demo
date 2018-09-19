@@ -48,6 +48,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function (event) {
 
+            var video = document.querySelector('video');
             var manifestUrl = 'iiif-manifest.json';
 
             Manifold.loadManifest({
@@ -64,7 +65,10 @@
 
                 treecomponent.on('treeNodeSelected', function(node) {
                     console.log('selected: ' + node.label);
-                    console.log(node.data.canvases[0])
+                    var target = node.data.canvases[0];
+                    var time = Manifesto.Utils.getTemporalComponent(target);
+                    video.currentTime = time[0];
+                    video.play();
                 });
 
             }).catch(function(e) {
