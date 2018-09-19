@@ -3,7 +3,7 @@
         "http://www.w3.org/ns/anno.jsonld",
         "http://iiif.io/api/presentation/3/context.json"
     ],
-    "id": "https://iiif-video-nav-demo.netlify.com/manifest.json",
+    "id": "https://iiif-video-nav-demo.netlify.com/iiif-manifest.json",
     "type": "Manifest",
     "label": {
         "en": [
